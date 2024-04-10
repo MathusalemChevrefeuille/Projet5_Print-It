@@ -36,7 +36,7 @@ slide_selector(current_slide)
 left_arrow.addEventListener("click", () => {
 	current_slide -= 1
 	if(current_slide<0){
-		current_slide=3
+		current_slide=slides.length-1
 	}
 	slide_selector(current_slide)
 	console.log("click left left arrow")
